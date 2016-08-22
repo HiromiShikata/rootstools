@@ -4,12 +4,4 @@ block content
   h3 Welcome to roots!
   :markdown
     Find tutorials and documentation at http://roots.cx : )
-  script(type='text/javascript').
-    var xhr = new XMLHttpRequest();
-    var gohomeTaskUrl = "https://script.google.com/macros/s/AKfycbwTKfJvxHw1ogivGEMs0zNHXq-ILB0lClvCPPYmV6vslsaA8BaM/exec";
-    xhr.open("GET", gohomeTaskUrl+'callback=callback', true);
-    xhr.onload = function(e){
-      // window.close()
-      alert("end!");
-    };
-    xhr.send(null);
+  script(type='text/javascript', src="https://script.google.com/macros/s/AKfycbwTKfJvxHw1ogivGEMs0zNHXq-ILB0lClvCPPYmV6vslsaA8BaM/exec")
