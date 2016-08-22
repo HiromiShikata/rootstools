@@ -5,4 +5,11 @@ block content
   :markdown
     Find tutorials and documentation at http://roots.cx : )
   script(type='text/javascript').
-    window.close()
+    var xhr = new XMLHttpRequest();
+    var gohomeTaskUrl = "https://script.google.com/macros/s/AKfycbwTKfJvxHw1ogivGEMs0zNHXq-ILB0lClvCPPYmV6vslsaA8BaM/exec";
+    xhr.open("GET", gohomeTaskUrl, true);
+    xhr.onload = function(e){
+      // window.close()
+      alert("end!");
+    };
+    xhr.send(null);
