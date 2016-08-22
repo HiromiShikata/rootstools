@@ -7,7 +7,7 @@ block content
   script(type='text/javascript').
     var xhr = new XMLHttpRequest();
     var gohomeTaskUrl = "https://script.google.com/macros/s/AKfycbwTKfJvxHw1ogivGEMs0zNHXq-ILB0lClvCPPYmV6vslsaA8BaM/exec";
-    xhr.open("GET", gohomeTaskUrl, true);
+    xhr.open("GET", gohomeTaskUrl+'callback=callback', true);
     xhr.onload = function(e){
       // window.close()
       alert("end!");
